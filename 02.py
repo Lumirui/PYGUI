@@ -7,5 +7,5 @@ a2=a1.maxsize()
 print(a2)
 k,g=a2
 a1.geometry(f'{int(k/2)}x{int(g/2)}')
-
+a1.geometry('400x500+200+300')
 a1.mainloop()

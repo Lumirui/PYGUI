@@ -9,7 +9,7 @@
 首先输入我们的第一行命令
 
 ```python
-`import tkinter as tk #导入tkinter并将其命名为tk`
+import tkinter as tk #导入tkinter并将其命名为tk
 ```
 
 紧接着写

@@ -17,7 +17,7 @@ import tkinter as tk #导入tkinter并将其命名为tk
 ```python
 window=tk.Tk() #这里的window是变量名,可以自定义,后面的第一个tk表示刚才命名的`,作用是为了定义
 
-`window.mainloop() #窗口主循环
+window.mainloop() #窗口主循环
 ```
 
 这样就可以看见我们的新窗口了
@@ -69,4 +69,16 @@ a1.geometry(f'{int(k/2)}x{int(g/2)}')
 ```python
 a1.resizable(False,False)  #前面一个是x,后面一个是y
 ```
+
+resizable英文是可改变的,True代表可以改变,False代表不可以改变大小
+
+接下来设置窗口图标,图标可以在网上找,然后找转换器转换下格式
+
+```
+#设置窗口图标,用相对路径更好*
+
+a1.iconbitmap('logo.ico')
+```
+
+## 4.窗口背景与透明度
 

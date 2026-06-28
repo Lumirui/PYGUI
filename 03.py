@@ -7,5 +7,7 @@ print(a2)
 k,g=a2
 a1.geometry(f'{int(k/2)}x{int(g/2)}')
 a1.resizable(False,False)
+#设置窗口图标
+a1.iconbitmap('logo.ico')
 #结束语句
 a1.mainloop()

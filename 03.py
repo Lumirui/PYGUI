@@ -1,5 +1,4 @@
 import tkinter as tk
-
 a1=tk.Tk()
 a1.title('王睿')
 #获取用户分辨率,这样设置更合理

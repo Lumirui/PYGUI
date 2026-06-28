@@ -1,6 +1,6 @@
 import tkinter as tk
 a1=tk.Tk()
-a1.title('王睿')
+a1.title('小王')
 #获取用户分辨率,这样设置更合理
 a2=a1.maxsize()
 print(a2)

@@ -82,3 +82,21 @@ a1.iconbitmap('logo.ico')
 
 ## 4.窗口背景与透明度
 
+如果觉得默认的窗口背景颜色不好看,可以使用以下代码
+
+```python
+a1.config(*bg*='blue') 
+```
+
+这样窗口背景颜色就变成了蓝色,如果觉得不好看,可以使用颜色表,这里推荐使用
+
+https://tools.jb51.net/static/colorpicker/
+
+如果还想改变透明度,可以使用
+
+```python
+a1.attributes('-alpha',0.5)
+```
+
+前面的'-alpha'是传参,后面的数字是从0-1,1为不透明
+

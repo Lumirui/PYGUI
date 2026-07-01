@@ -10,9 +10,14 @@ a1.resizable(False,False)
 #设置窗口图标
 a1.iconbitmap('logo.ico')
 
+def close():
+  print('关')
+  #销毁窗口/组件
+  a1.destroy()
 #设置窗口制定
 a1.attributes('-topmost',True)
-
+#设置窗口关闭时执行的参数
+a1.protocol('WM_DELETE_WINDOW',close)
 
 #结束语句
 a1.mainloop()

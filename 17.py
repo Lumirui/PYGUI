@@ -1,11 +1,16 @@
 import tkinter as tk
 from tkinter.ttk import Combobox
+from tkinter import END
 a1=tk.Tk()
 a1.title('小王')
 a1.geometry('500x500+400+200')
 a1.resizable(False,False)
 #设置窗口图标
 a1.iconbitmap('logo.ico')
+tk.Label(a1,font=('楷体',16),text='员工列表').place(x=1,y=1)
+lb=tk.Listbox(a1,font=('楷体',16),width=40,height=20)
+lb.place(x=4,y=30)
+
 
 def t():
   t1=tk.Toplevel()
@@ -39,13 +44,15 @@ def t():
     print(t2.get())
     print(s2.get())
     if s3.get()==1:
-      print('跑步')
+      aihao1='跑步'
     else:
-      print('未选择')
+      aihao1='未选择'
     if s4.get()==1:
-      print('游泳')
+      aihao2='游泳'
     else:
-      print('未选择')
+      aihao2='未选择'
+    nei=f'{(t2.get()),{s2.get()},{aihao1},{aihao2}}'
+    lb.insert(END,'123',nei)
   tk.Button(t1,text='提交',command=tj).place(x=200,y=200)
 #创建主菜单
 cai=tk.Menu(a1)
